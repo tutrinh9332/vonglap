@@ -6,14 +6,21 @@
 </head>
 <body>
 <h1>Khai Báo Biến</h1>
+<p id="tong"></p>
 <p id="show"></p>
 <script>
+    let sum =0;
     let number=parseInt(prompt("nhập số:"));
-    let sum="";
-    for (i=1;i<number;i+=2){
-        sum  +="sum = "+i+"<br>";
+    let soTt='';
+    for ( let i=0;i<number;i+=2){
+          soTt +=" tong so thu tu = "+i+"<br>";
+            sum=sum+i;
+
     }
-    document.getElementById("show").innerHTML= sum;
+    console.log(sum);
+    console.log(soTt);
+    document.getElementById("tong").innerHTML= soTt;
+    document.getElementById("show").innerHTML= "tong chuoi = " +sum;
 
 </script>
 
