@@ -13,14 +13,11 @@
     let number=parseInt(prompt("nhập số:"));
     let soTt='';
     for ( let i=0;i<number;i+=2){
-          soTt +=" tong so thu tu = "+i+"<br>";
+          soTt +=" tổng số thứ tự = "+i+"<br>";
             sum=sum+i;
-
     }
-    console.log(sum);
-    console.log(soTt);
     document.getElementById("tong").innerHTML= soTt;
-    document.getElementById("show").innerHTML= "tong chuoi = " +sum;
+    document.getElementById("show").innerHTML= "tổng chuỗi = " +sum;
 
 </script>
 
