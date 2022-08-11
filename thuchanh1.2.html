@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Khai báo biến vòng lặp</title>
+</head>
+<body>
+<h1>Khai Báo Biến</h1>
+<p id="show"></p>
+<script>
+    let number=parseInt(prompt("nhập số:"));
+    let sum="";
+    for (i=1;i<number;i+=2){
+        sum  +="sum = "+i+"<br>";
+    }
+    document.getElementById("show").innerHTML= sum;
+
+</script>
+
+</body>
+</html>
