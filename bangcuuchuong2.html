@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BẢNG CỬU CHƯƠNG 2</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  let text,i,j;
+  text =" <table border='1' width='300' cellSpacing='0' cellPadding='3' >";
+  for (i=1;i<=10;i++){
+      text+="<tr>";
+      for (j=1;j<=10;j++){
+          text+="<td>" +i+ "*" +j+"="+i*j+"</td>";
+      }
+      text+="</tr>";
+  }
+  text+="</table>";
+  document.write(text);
+</script>

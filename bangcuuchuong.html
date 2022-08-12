@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BẢNG CỬU CHƯƠNG</title>
+</head>
+<body>
+
+</table>
+</body>
+</html>
+<script>
+
+   let text="";
+  let i=1; let j;
+   text = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+   while (i<=10){
+       text += "<tr>";
+       j = 1;
+       while (j<=10){
+           text +="<td>"+i+"*"+j+"="+i*j+"</td>";
+           j++;
+       }
+       text += "</tr>";
+       i++;
+   }
+   text += "</table>";
+   document.write(text);
+</script>

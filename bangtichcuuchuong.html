@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bang tích cửu trương</title>
+</head>
+<body>
+<table id="show" border = "4" >
+</table>
+</body>
+</html>
+<script>
+  let str= "";
+  for (let j=1; j<11; j++){
+    str += "<tr>"
+    for (let i=1; i<11;i++){
+        str += "<td>"+i*j+ "</td>";
+    }
+     str+="</tr>"
+  }
+     document.getElementById("show").innerHTML= str;
+</script>
